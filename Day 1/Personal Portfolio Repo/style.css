@@ -53,8 +53,8 @@ body{
 }
 
 .btn-inv {
-  /* color: rgba(var(--themeColor), 1);
-  background: #fff; */
+  color: rgba(var(--themeColor), 1);
+  background: #fff;
 }
 
 .button-sm {
@@ -65,6 +65,8 @@ body{
 
 
 .button {
+  background-color: var(--themeColor);
+  color: #fff;
   font-family: inherit;
   letter-spacing: 1px;
   font-weight: 700;
@@ -340,6 +342,12 @@ body{
 
 .home-button{
   margin-right: 2rem;
+}
+
+.home-button:hover{
+  background-color:rgb(22, 53, 89);
+
+  color: #fff;
 }
 
 @media (max-width: 37.5em) {
@@ -654,4 +662,183 @@ body{
   .projects__button-inv {
     width: 70%;
   }
+}
+
+/* CONTACT STYLING */
+
+.contact {
+  background: rgba(250, 250, 250, 1);
+}
+
+.contact-form-cont {
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  background: #fff;
+  padding: 5rem;
+}
+
+@media (max-width: 56.25em) {
+  .contact-form-cont {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .contact-form-cont {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 3rem;
+    
+  }
+}
+
+.contact-form-field {
+  margin-bottom: 3rem;
+}
+
+.contact-form-field-label {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #444;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.contact-form-field-input {
+  display: block;
+  padding: 2rem;
+  width: 100%;
+  border: 1px solid rgba(225, 225, 225, 1);
+  font-size: 1.6rem;
+  resize: none;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Code for Modern Browsers */
+/* Code for WebKit, Blink, Edge */
+/* Code for Internet Explorer 10-11 */
+/* Code for Microsoft Edge */
+/* Code for Mozilla Firefox 4 to 18 */
+/* Code for Mozilla Firefox 19+ */
+
+
+.contact-form-field-input::placeholder {
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input::-webkit-input-placeholder {
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input:-ms-input-placeholder {
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input::-ms-input-placeholder {
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input:-moz-placeholder {
+  opacity: 1;
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input::-moz-placeholder {
+  opacity: 1;
+  color: rgb(175, 175, 175);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.contact-form-field-input:focus {
+  outline: none;
+}
+
+/* .contact-form-submit {
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  border: none;
+  letter-spacing: 1px;
+  font-family: inherit;
+  font-weight: 700;
+  background: rgba(var(--themeColor));
+  color: #fff;
+  margin-top: 4rem;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.contact-form-submit {
+
+  padding: 1.5rem; /* Adjusted padding for a more balanced look */
+  width: 100%;
+  font-size: 1.8rem; /* Slightly increased font size for better readability */
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'Your Preferred Font', sans-serif; /* Replace with your preferred font */
+  font-weight: 700;
+  background-color: var(--themeColor);
+  color: #fff;
+  margin-top: 2rem; /* Reduced margin for better spacing */
+  display: inline-block; /* Changed to inline-block to adjust width based on content */
+  border-radius: 8px; /* Increased border-radius for rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out; /* Smooth transition effect */
+
+  }
+ .contact-form-submit:hover{
+  background-color:rgb(22, 53, 89);
+
+  color: #fff;
+  }
+
+
+
+.contact-form-visual {
+  background-image: url('https://i.postimg.cc/mrHQw69n/contact-form-bg.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 37.5em) {
+  .contact-form-visual {
+    display: none;
+  }
+}
+
+.contact-form-visual::after {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  background: rgba(var(--themeColor), 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

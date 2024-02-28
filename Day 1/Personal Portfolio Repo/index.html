@@ -112,7 +112,7 @@
                 <h3 class="heading-quaternary about-heading-quaternary">
                   My Skills
                 </h3>
-                <ul class="about-skill">
+                <ul class="about-skills">
                   <li class="about-skill">Html</li>
                   <li class="about-skill">Css</li>
                   <li class="about-skill">Git</li>
@@ -123,13 +123,13 @@
                 </ul>
               </div>
             </div>
-            </div>
           </div>
+        </div>
       </Section>
 
       <!-- SKILLS SECTION -->
-      <Section>
-        <ul class="skills-showcase">
+      <Section class="skills-showcase">
+        <ul class="skills-showcase__list">
           <li class="skills-showcase__list-item">
             <i class="devicon-html5-plain"></i>
           </li>
@@ -324,7 +324,39 @@
             </div>
           </div>
         </div>
+      </Section>
 
+      <!-- CONTACT -->
+      <Section class="contact main-section" id="contact">
+        <DIV class="main-container">
+          <h2 class="heading-secondary">
+            <span class="heading-secondary__sm">Contact</span>
+            <span class="heading-secondary__main">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</span>
+          </h2>
+          <div class="main-section-content">
+            <div class="contact-form-content">
+              <form class="contact-form">
+                <div class="contact-form-field">
+                  <label for="name" class="contact-form-field-label">Name</label>
+                  <input placeholder="Enter Your Name" type="text" class="contact-form-field-input" />              
+                </div>
+  
+                <div class="contact-form-field">
+                  <label for="name" class="contact-form-field-label">Email</label>
+                  <input placeholder="Enter Your Email" type="text" class="contact-form-field-input" />
+                </div>
+
+                <div class="contact-form-field">
+                  <label for="name" class="contact-form-field-label">Message</label>
+                  <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                    class="contact-form-field-input"></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit">Submit</button>
+              </form>
+              <div class="contact-form-visual"></div>              
+            </div>
+          </div>
+        </DIV>
       </Section>
 </body>
 </html> 
