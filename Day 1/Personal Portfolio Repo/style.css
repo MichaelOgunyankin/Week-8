@@ -164,6 +164,9 @@ body{
   margin-bottom: 0;
 }
   /* main header styling  */
+.main-header__navigation a{
+  color: #000;
+}
 
 .main-header {
     display: flex;
@@ -271,6 +274,7 @@ body{
   }
   a{
     text-decoration: none;
+    color: #fff;
   }
 
   .main-header-sm-scr-nav-btn-line:first-child {
@@ -656,7 +660,7 @@ button:hover{
   margin-bottom: 0;
 }
 
-.projects__button-theme {
+.projects-button {
   margin-right: 2rem;
 }
 
@@ -909,6 +913,10 @@ button:hover{
 .main-footer__social-link-icon {
   width: 2.5rem;
 }
+
+/* .icon-bg{
+background-color: #000;
+} */
 
 .main-footer__bottom {
   padding: 5rem 2rem;
