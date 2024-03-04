@@ -77,6 +77,7 @@ body{
   font-size: 1.8rem;
   border-radius: 5px;
   border: 2px solid rgba(var(--themeColor), 1);
+  transition: background 0.5s ease-in-out;
 }
 
 /* Animation ( Keyframes ) */
@@ -184,26 +185,26 @@ body{
     cursor: pointer;
   }
 
-  .main-header__sm-scr-nav-btn {
+  .main-header-sm-scr-nav-btn {
     padding: 1rem 1rem;
     display: none;
     cursor: pointer;
   }
   
   @media (max-width: 37.5em) {
-    .main-header__sm-scr-nav-btn {
+    .main-header-sm-scr-nav-btn {
       display: block;
     }
   }
   
-  .main-header__sm-scr-nav-btn-line {
+  .main-header-sm-scr-nav-btn-line {
     height: 1px;
     background: #000;
     width: 3rem;
     border-radius: 50px;
   }
   
-  .main-header__sm-menu {
+  .main-header-sm-menu {
     background: #fff;
     position: fixed;
     top: 0;
@@ -218,7 +219,7 @@ body{
     justify-content: center;
   }
   
-  .main-header__sm-menu-close {
+  .main-header-sm-menu-close {
     position: absolute;
     top: 3.3rem;
     right: 2.5rem;
@@ -226,8 +227,8 @@ body{
     height: 3rem;
   }
   
-  .main-header__sm-menu-close:before,
-  .main-header__sm-menu-close:after {
+  .main-header-sm-menu-close:before,
+  .main-header-sm-menu-close:after {
     position: absolute;
     content: ' ';
     height: 3rem;
@@ -237,23 +238,23 @@ body{
     background-color: #000;
   }
   
-  .main-header__sm-menu-close:before {
+  .main-header-sm-menu-close:before {
     transform: rotate(45deg);
   }
   
-  .main-header__sm-menu-close:after {
+  .main-header-sm-menu-close:after {
     transform: rotate(-45deg);
   }
   
-  .main-header__sm-menu--active {
+  .main-header-sm-menu-active {
     transform: translateX(0);
   }
   
-  .main-header__sm-menu-links {
+  .main-header-sm-menu-links {
     width: 90%;
   }
   
-  .main-header__sm-menu-link {
+  .main-header-sm-menu-link {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.3s, transform 0.3s;
@@ -272,7 +273,7 @@ body{
     text-decoration: none;
   }
 
-  .main-header__sm-scr-nav-btn-line:first-child {
+  .main-header-sm-scr-nav-btn-line:first-child {
     margin-bottom: 8px;
   }
   
@@ -344,7 +345,12 @@ body{
   margin-right: 2rem;
 }
 
-.home-button:hover{
+.project-button, .contact-button, .download-button{
+  color: #fff;
+}
+
+
+button:hover{
   background-color:rgb(22, 53, 89);
 
   color: #fff;
@@ -422,6 +428,7 @@ body{
 
   .about-button-theme {
     width: 70%;
+    margin-right: 2rem;
   }
 }
 
@@ -806,7 +813,7 @@ body{
   display: inline-block; /* Changed to inline-block to adjust width based on content */
   border-radius: 8px; /* Increased border-radius for rounded corners */
   cursor: pointer;
-  transition: background 0.3s ease-in-out; /* Smooth transition effect */
+  transition: background 0.5s ease-in-out; /* Smooth transition effect */
 
   }
  .contact-form-submit:hover{
@@ -841,4 +848,82 @@ body{
   height: 100%;
   top: 0;
   left: 0;
+}
+
+/* MAIN FOOTER STYLING */
+
+/* Main Footer */
+
+.main-footer-upper {
+  background: #000;
+  padding: 10rem 0;
+}
+
+.main-footer-links {
+  display: flex;
+  max-width: 50rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.main-footer-link a {
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+@media (max-width: 37.5em) {
+  .main-footer-upper {
+    padding: 7rem 0;
+  }
+
+  .main-footer-links {
+    display: block;
+  }
+
+  .main-footer-link a {
+    margin-bottom: 0.5rem;
+    padding: 3rem 1.5rem;
+    display: block;
+  }
+}
+
+.main-footer-mid-line {
+  background: grey;
+  height: 1px;
+  margin-top: 6rem;
+}
+
+.main-footer-socials {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 25rem;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.main-footer__social-link-icon {
+  width: 2.5rem;
+}
+
+.main-footer__bottom {
+  padding: 5rem 2rem;
+  background: #222;
+}
+
+.main-footer__bottom-txt {
+  color: #eee;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+.main-footer__bottom-txt a {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 700;
 }
