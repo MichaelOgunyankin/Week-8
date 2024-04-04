@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
+*{
+    font-family: 'Uber Move Text', sans-serif;
+    ;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    background-color:black;
+    padding: 20px 30px;
+    align-items: center;
+    color: #fff;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+header h1{
+grid-column: span 1;
+}
+
+header .nav1{
+    grid-column: 8 / 12;
+    justify-self: right;
+}
+
+header .nav2{
+    grid-column: 2 / 7;
+    justify-self: center;
+    align-self: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    color:black;
+}
+
+main{
+    /* padding: 20px;
+    margin: 60px 0; */
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+section{
+margin: 0;
+
+display:block;
+}
+
+section.white{
+    
+    background-color: white;
+}
+
+section.black{
+   
+    background-color:black;
+    color: #fff;
+}
+
+.welcome-img{
+    grid-column: 8/ span 5;
+}
+
+.welcome-message{
+    color: #fff;
+    grid-column:span 6;
+    justify-self:center ;
+    align-self: center;
+}
+
+.welcome-header{
+    font-size: 52px;
+}
+
+input{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px 28px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px 28px;
+    margin-top: 25px;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.drive-header{
+    font-size:  58px; 
+    color: black;
+    margin-bottom: 30px ;
+    margin-right: 150px;
+}
+
+.drive-img{
+    color: #fff;
+    grid-column:span 6;
+    justify-self:center ;
+    align-self: center;
+    background-color: #fff;
+    margin: 80px 0;
+}
+
+.drive-message{
+    color: black;
+    grid-column:8 / span 5;
+    justify-self:center ;
+    align-self: center;
+    background-color: #fff;
+}
+
+.drive-btns{
+    display: flex;
+    gap: 20px
+}
+
+#sign-in{
+    border: none;
+border-bottom: 2px solid rgb(148, 143, 143);
+}
+
+#get-started{
+background-color: black;
+color: white;
+}
+
+
+/* APPS SECTION */
+/* .white2{
+background-color: #f6f6f6;
+display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+padding-top: 90px;
+padding-bottom: 90px;
+}
+
+.appsHeader{
+    text-align: left;
+    font-size:  38px; 
+    font-weight: bold;
+    color: black;
+}
+
+.Barcodes{
+    display: flex;
+    gap: 40px;
+}
+
+.UberApp, .UberDrive{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 28px;
+}
+
+.AppText{
+display: flex;
+flex-direction: column;
+align-items: center;
+} */
+
+
+
+
+.hero {
+    background-color: #F8F9FB; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; /* Adjust padding as needed */
+  }
+
+  .appsTitle{
+    font-size: 38px;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+    margin-bottom: 40px; /* Add some space below the heading */
+  }
+
+  .appsHeader {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+    text-align: center; /* Removed from here */
+  }
+
+  .Barcodes {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: space-around; /* Distribute evenly */
+    gap: 40px; /* Spacing between elements */
+  }
+
+  .UberApp, .UberDrive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 28px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .app-content {
+    text-align: center; /* Re-center text within the app boxes */
+    margin-bottom: 10px;
+  }
+  
+
+
+
+
+
+
+
+.FooterSubTitle{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.TopContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-bottom: 95px;
+    margin-top: 45px;
+}
+
+.Statements{
+    text-align: right;
+}
+
+.Uber{
+    margin-bottom: 45px;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.Visit{
+    font-size: 16px;
+}
+
+.Download1{
+margin-bottom: 25px;
+}
+
+.MiddleContainer{
+    display: flex;
+    padding-left: 180px;
+    padding-right: 400px;
+    justify-content: space-between;
+}
+
+.BottomContainer{
+
+}
+
+.MediaIcons{
+
+}
+
+.MediaIcon{
+    width: 1rem;
+    
+}
+
+.whiteicon{
+    background-color: #fff;
+}
+
+.blackicon{
+    background-color: transparent;
+}
