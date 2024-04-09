@@ -194,6 +194,24 @@ body{
     cursor: pointer;
   }
   
+  @media (max-width: 500px)  {
+    .main-header__logo-text{
+      font-size: 1.8rem;
+    }
+    
+    .main-header__navigation-link {
+      font-size: 1.4rem;
+    }
+    .main-header {
+      padding: 1.5rem 1.5rem;
+    }
+  
+    .main-header__logo-img-cont {
+      margin-right: 1rem;
+    }
+    /* Adjust other styles as needed */
+  }
+
   @media (max-width: 37.5em) {
     .main-header-sm-scr-nav-btn {
       display: block;
