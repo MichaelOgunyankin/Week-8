@@ -441,21 +441,21 @@
       </h2>
       <div class="main-section-content">
         <div class="contact-form-content">
-          <form class="contact-form">
+          <form class="contact-form" method="post" action="send-email.php"
             <div class="contact-form-field">
               <label for="name" class="contact-form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact-form-field-input" />
+              <input placeholder="Enter Your Name" type="text" class="contact-form-field-input" required />
             </div>
 
             <div class="contact-form-field">
               <label for="name" class="contact-form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact-form-field-input" />
+              <input placeholder="Enter Your Email" type="email" class="contact-form-field-input" required />
             </div>
 
             <div class="contact-form-field">
               <label for="name" class="contact-form-field-label">Message</label>
               <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact-form-field-input"></textarea>
+                class="contact-form-field-input" required></textarea>
             </div>
             <button type="submit" class="contact-form-submit">Submit</button>
           </form>

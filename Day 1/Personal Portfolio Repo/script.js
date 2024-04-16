@@ -1,4 +1,4 @@
-const smMenuBtn = document.querySelector('.main-header-sm-scr-nav-btn')
+const smMenuBtn = document.querySelector('.main-header-sm-scr-nav-bt')
 const smMenu = document.querySelector('.main-header-sm-menu')
 const smMenuCloseBtn = document.querySelector('.main-header-sm-menu-close')
 
@@ -58,6 +58,7 @@ smMenuLinks.forEach((ele) => {
     }, 1300)
   })
 })
+
 
 smMenuCloseBtn.addEventListener('click', () => {
   smMenuLink4.style.transitionDelay = '0s'
